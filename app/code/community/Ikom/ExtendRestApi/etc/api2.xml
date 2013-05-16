@@ -1,15 +1,15 @@
 <config>
     <api2>
         <resource_groups>
-            <ikom_extendrestapi translate="title" module="Ikom_ExtendRestApi">
+            <extendrestapi translate="title" module="Ikom_ExtendRestApi">
                 <title>Extended Rest API</title>
                 <sort_order>10</sort_order>
-            </ikom_extendrestapi>
+            </extendrestapi>
         </resource_groups>
         <resources>
-            <ikom_extendrestapi translate="title" module="Ikom_ExtendRestApi">
+            <extendrestapi translate="title" module="Ikom_ExtendRestApi">
                 <group>extendrestapi</group>
-                <model>ikom_extendrestapi/api2_category</model>
+                <model>extendrestapi/api2_category</model>
                 <title>Category Management</title>
                 <sort_order>10</sort_order>
                 <privileges>
@@ -24,16 +24,16 @@
                 </attributes>
                 <routes>
                     <route>
-                        <route>/ikom_extendrestapi/categories</route>
+                        <route>/extendrestapi/categories</route>
                         <action_type>collection</action_type>
                     </route>
                     <route>
-                        <route>/ikom_extendrestapi/categories/:category_id</route>
+                        <route>/extendrestapi/categories/:category_id</route>
                         <action_type>entity</action_type>
                     </route>
                 </routes>
                 <versions>1</versions>
-            </ikom_extendrestapi>
+            </extendrestapi>
         </resources>
     </api2>
 </config>
