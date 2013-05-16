@@ -4,9 +4,6 @@
         <Ikom_ExtendRestApi>
             <active>true</active>
             <codePool>community</codePool>
-            <depends>
-                <mage_api />
-            </depends>
         </Ikom_ExtendRestApi>
     </modules>
 </config>
