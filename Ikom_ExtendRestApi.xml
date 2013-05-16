@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<config>
+    <modules>
+        <Ikom_ExtendRestApi>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Ikom_ExtendRestApi>
+    </modules>
+</config>

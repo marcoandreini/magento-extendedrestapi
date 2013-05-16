@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<config>
+    <modules>
+        <Ikom_ExtendRestApi>
+            <version>0.1.0</version>
+        </Ikom_ExtendRestApi>
+    </modules>
+<global>
+        <models>
+            <ikom_extendrestapi>
+                <class>Ikom_ExtendRestApi_Model</class>
+            <resourceModel>ikom_extendrestapi_resource</resourceModel>
+            </ikom_extendrestapi>
+        <ikom_extendrestapi_resource>
+                <class>Ikom_ExtendRestApi_Model_Resource</class>
+            </ikom_extendrestapi_resource>
+        </models>
+    <resources>
+            <ikom_extendrestapi_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </ikom_extendrestapi_read>
+            <ikom_extendrestapi_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </ikom_extendrestapi_write>
+        <ikom_extendrestapi_setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+                <setup>
+                    <module>Ikom_ExtendRestApi</module>
+                </setup>
+            </ikom_extendrestapi_setup>
+        </resources>
+    <blocks>
+            <ikom_extendrestapi>
+                <class>Ikom_ExtendRestApi_Block</class>
+            </ikom_extendrestapi>
+        </blocks>
+    <helpers>
+            <ikom_extendrestapi>
+                <class>Ikom_ExtendRestApi_Helper</class>
+            </ikom_extendrestapi>
+        </helpers>
+    </global>
+<admin>
+        <routers>
+            <ikom_extendrestapi_admin>
+                <use>admin</use>
+                <args>
+                    <module>Ikom_ExtendRestApi_Adminhtml</module>
+                    <frontName>admin_ikom_extendrestapi</frontName>
+                </args>
+            </ikom_extendrestapi_admin>
+        </routers>
+    </admin>
+<frontend>
+        <routers>
+            <ikom_extendrestapi>
+                <use>standard</use>
+                <args>
+                    <module>Ikom_ExtendRestApi</module>
+                    <frontName>ikom_extendrestapi</frontName>
+                </args>
+            </ikom_extendrestapi>
+        </routers>
+    </frontend>
+</config>
