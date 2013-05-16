@@ -28,7 +28,7 @@
                 </attributes>
                 <routes>
                     <route>
-                        <route>/categories/:category_id</route>
+                        <route>/categories/:id</route>
                         <action_type>entity</action_type>
                     </route>
                     <route>

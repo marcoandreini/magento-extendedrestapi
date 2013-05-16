@@ -10,7 +10,7 @@ class Ikom_ExtendRestApi_Model_Api2_Category_Rest_Admin_V1 extends Mage_Catalog_
 	 * @return category entity
 	 */
     protected function _retrieve() {
-    	$category_id = $this->getRequest()->getParam('category_id');
+    	$category_id = $this->getRequest()->getParam('id');
         $category = Mage::getResourceModel('catalog/category')->load($category_id);
         // $store = $this->_getStore();
         // $category->setStoreId($store->getId());
@@ -32,7 +32,7 @@ class Ikom_ExtendRestApi_Model_Api2_Category_Rest_Admin_V1 extends Mage_Catalog_
      * @return int
      */
      protected function _retrieveCollection() {
-        $collection = Mage::getResourceModel('catalog/category');
+        $collection = Mage::getResourceModel('catalog/category')->getCollection();
         $store = $this->_getStore();
         $collection->setStoreId($store->getId());
         $collection->addAttributeToSelect(array_keys(
