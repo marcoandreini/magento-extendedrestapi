@@ -14,7 +14,16 @@ class Ikom_ExtendRestApi_Model_Api2_Category_Rest_Admin_V1 extends Mage_Catalog_
         $category = Mage::getResourceModel('catalog/category')->load($category_id);
         // $store = $this->_getStore();
         // $category->setStoreId($store->getId());
-		return $category;
+
+        $data = array();
+    	$data['category_id'] = $category_id;
+    	$data['name'] = $category->getName();
+    	$data['parent_id'] = $category->getParentId();
+    	$data['child_id'] = array(); // TODO: $subcats
+    	$data['active'] = $category->getIsActive() ? 1 : 0;
+    	$data['level'] = $category->getLevel();
+    	$data['position'] = $category->getPosition();
+    	return $data;
     }
 
     /**
