@@ -18,23 +18,25 @@
                     </admin>
                 </privileges>
                 <attributes>
-                    <category_id>Category ID</category_id>
+                    <entity_id>Category ID</entity_id>
                     <name>Name</name>
                     <parent_id>Category Parent ID</parent_id>
-                    <child_id>Category Child List</child_id>
-                    <active>Active</active>
+                    <is_active>Active</is_active>
                     <level>Level</level>
                     <position>Position</position>
+                    <children>Children Ids</children>
+                    <url_key>URL key</url_key>
+                    <store_id>Store ID</store_id>
                 </attributes>
                 <routes>
-                    <route>
+                    <route_entity>
                         <route>/categories/:id</route>
                         <action_type>entity</action_type>
-                    </route>
-                    <route>
+                    </route_entity>
+                    <route_collection>
                         <route>/categories</route>
                         <action_type>collection</action_type>
-                    </route>
+                    </route_collection>
                 </routes>
                 <versions>1</versions>
             </extendrestapi>
